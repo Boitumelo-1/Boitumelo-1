@@ -90,8 +90,8 @@ _July 2023 – August 2024_
 
 ### 🎯 Let's Connect!
 
-- [LinkedIn](#) <!-- Add your LinkedIn URL -->
-- [Portfolio](#) <!-- Add your portfolio/personal website URL -->
+- [LinkedIn](https://www.linkedin.com/in/buyiswa-zozi-087980273/) <!-- Add your LinkedIn URL -->
+- [Portfolio](https://buyiswa-portfolio.vercel.app/) <!-- Add your portfolio/personal website URL -->
 - [Email](mailto:zozibuyiswa@gmail.com)
 
 ---
