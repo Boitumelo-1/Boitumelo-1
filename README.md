@@ -96,6 +96,20 @@ _July 2023 – August 2024_
 
 ---
 
+
+
+## 🛰️ GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Boitumelo-1&show_icons=true&theme=radical" alt="GitHub Stats"/>
+  <br/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Boitumelo-1&theme=radical" alt="GitHub Streak"/>
+  <br/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Boitumelo-1&theme=radical"/>
+</p>
+
+---
+
 ### 🎉 Fun Facts
 
 - I enjoy collaborating on tech projects that make a difference
