@@ -26,12 +26,11 @@ toggleBtn.addEventListener('click', () => {
 });
 
 // Fun greeting (for demo)
-window.addEventListener('DOMContentLoaded', () => {
+(function() {
   const greet = [
     "Welcome, Tech Innovator!",
-    "Hello, World Changer!",
     "Empowering Women in Tech 💜",
     "Let's code something amazing!"
   ];
   document.title = greet[Math.floor(Math.random() * greet.length)] + ' | Buyiswa Asanda Zozi';
-});
+})();
