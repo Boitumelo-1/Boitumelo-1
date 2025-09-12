@@ -8,87 +8,120 @@
   <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/Boitumelo-1" />
 </head>
 <body>
-  <div class="stars-bg" id="stars-bg"></div>
-  <div class="hero-bg">
-    <header>
-      <div class="profile-pic">
-        <img src="https://avatars.githubusercontent.com/Boitumelo-1" alt="Profile Picture">
-      </div>
-      <div class="hero-text">
-        <h1>Buyiswa Asanda Zozi</h1>
-        <h2>ICT Graduate | Application Developer</h2>
-        <p class="hero-tagline">Building efficient, beautiful & futuristic apps.</p>
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/buyiswa-zozi-087980273/" class="social-btn linkedin" target="_blank">LinkedIn</a>
-          <a href="https://github.com/Boitumelo-1" class="social-btn github" target="_blank">GitHub</a>
-          <a href="mailto:zozibuyiswa@gmail.com" class="social-btn email">Email</a>
-          <button class="social-btn cv" id="downloadCV">Download CV</button>
-        </div>
-      </div>
-    </header>
-  </div>
+  <div id="stars-bg"></div>
+  <header class="main-header">
+    <div class="logo">
+      <span class="logo-icon">🚀</span>
+      <span class="logo-text">Buyiswa Zozi</span>
+    </div>
+    <div class="header-actions">
+      <a href="Buyiswa_Asanda_Zozi_CV.pdf" download class="btn-cv">Download CV</a>
+      <a href="https://www.linkedin.com/in/buyiswa-zozi-087980273/" target="_blank" class="btn-social">LinkedIn</a>
+      <a href="https://github.com/Boitumelo-1" target="_blank" class="btn-social">GitHub</a>
+    </div>
+  </header>
   <main>
-    <section class="glass-card about">
-      <h3>👩🏾‍💻 About Me</h3>
+    <section class="hero">
+      <div class="profile-pic-glow">
+        <img src="https://avatars.githubusercontent.com/Boitumelo-1" alt="Profile Picture" class="profile-pic"/>
+      </div>
+      <h1 class="hero-title">Buyiswa Asanda Zozi</h1>
+      <div class="hero-subtitle">Software Developer</div>
+      <div class="hero-info">
+        <span class="info-item">
+          <svg width="18" height="18" fill="none" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M9 11v1a4 4 0 0 1-4 4h8a4 4 0 0 1-4-4v-1z"/></svg>
+          Johannesburg, South Africa
+        </span>
+        <span class="info-item">
+          <svg width="18" height="18" fill="none" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="3"/><path d="M12 7V5a3 3 0 0 0-6 0v2"/></svg>
+          Available for new opportunities
+        </span>
+      </div>
+    </section>
+
+    <section class="glass-card about-card">
+      <h2 class="about-title"><span class="about-icon">🟧</span> About Me</h2>
       <p>
         I'm a passionate and curious software development trainee with hands-on experience in Java programming, problem-solving, and building practical projects. I enjoy turning real-world challenges into code solutions, exploring how technology works, and continuously learning new skills.
-        <br><br>
-        <strong>Fun facts:</strong> <br>
-        - I started coding clueless about computers, and discovering how they work has been an exciting journey 🧩<br>
-        - I've watched every Star Wars movie at least 5 times ⭐<br>
-        - I code better with lo-fi music playing in the background 🎵<br>
-        - I once debugged code for hours only to find out it was a missing semicolon 😅<br>
-        - I see both coding and modeling as forms of creativity—one builds logic, the other builds expression 🎨<br>
-        - 📸 When I’m not coding, I like capturing moments through photography.
+      </p>
+      <p>
+        When I started coding, I had no idea how a computer works—but over time, I've grown to love understanding the logic behind it all. Beyond coding, I have a creative side and experience in modeling, which has helped me develop confidence, presentation skills, and a keen eye for detail.
+      </p>
+      <p>
+        I thrive at the intersection of logic and creativity, whether it's debugging a tricky program, building an application, or expressing myself through modeling. I'm always excited to learn, grow, and contribute to innovative projects that make a real impact.
       </p>
     </section>
-    <section class="glass-card skills">
-      <h3>🛠️ Skills</h3>
-      <ul>
-        <li>Java</li>
-        <li>JavaScript</li>
-        <li>Visual Basic</li>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Git</li>
-        <li>MongoDB</li>
-      </ul>
-    </section>
-    <section class="glass-card education">
-      <h3>🎓 Education</h3>
-      <div class="edu-entry">
-        <div>
-          <strong>Diploma in ICT in Application Development</strong>
-          <span class="edu-year">2022 - 2024</span>
-        </div>
-        <div>Walter Sisulu University</div>
-        <div class="edu-desc">Specialized in Software Development</div>
-      </div>
-      <div class="edu-entry">
-        <div>
-          <strong>Matric</strong>
-          <span class="edu-year">2016 - 2020</span>
-        </div>
-        <div>Boipelo Secondary School</div>
-        <div class="edu-desc">Mathematics and Physical Sciences</div>
-      </div>
-      <div class="edu-entry">
-        <div>
-          <strong>Certifications</strong>
-        </div>
-        <ul class="cert-list">
-          <li><b>Java SE 8 Programmer</b> (Oracle, 2025) – 1Z0-808 Certification</li>
-          <li><b>Information Technology Specialist</b> (Certiport, 2025) – Professional Skills Certification</li>
-          <li><b>AI Fundamentals</b> (IBM, 2025) – Artificial Intelligence Professional Skills</li>
-        </ul>
+
+    <section class="glass-card skills-card">
+      <h2 class="section-title"><span class="emoji">⚡</span> Skills</h2>
+      <div class="skills-list">
+        <span class="skill-badge">Java</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">Visual Basic</span>
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">SQL</span>
+        <span class="skill-badge">Git</span>
+        <span class="skill-badge">MongoDB</span>
       </div>
     </section>
-    <section class="glass-card experience">
-      <h3>💼 Experience</h3>
-      <div class="exp-entry">
-        <div>
-          <strong>Software Development Trainee - Java Program</strong>
-          <span class="exp-year">May 2025 - Present</span>
+
+    <section class="edu-cert-wrap">
+      <div class="edu-cert-inner">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-grid">
+          <div class="edu-card glass-card">
+            <div class="edu-head">
+              <span class="edu-degree">Diploma in ICT in Aplication Development</span>
+              <span class="edu-dates">2022 - 2024</span>
+            </div>
+            <div class="edu-school">Walter Sisulu University</div>
+            <div class="edu-desc">Specialized in Software Development</div>
+          </div>
+          <div class="edu-card glass-card">
+            <div class="edu-head">
+              <span class="edu-degree">Matric</span>
+              <span class="edu-dates">2016 - 2020</span>
+            </div>
+            <div class="edu-school">Boipelo Secondary School</div>
+            <div class="edu-desc">Mathematics and Physical Sciences</div>
+          </div>
+        </div>
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+          <div class="cert-card glass-card">
+            <div class="cert-head">
+              <span class="cert-title">Java SE 8 Programmer</span>
+              <span class="cert-year">2025</span>
+            </div>
+            <div class="cert-org">Oracle</div>
+            <div class="cert-desc">1Z0-808 Certification</div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-head">
+              <span class="cert-title">Information Technology Specialist</span>
+              <span class="cert-year">2025</span>
+            </div>
+            <div class="cert-org">Certiport</div>
+            <div class="cert-desc">Professional Skills Certification</div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-head">
+              <span class="cert-title">AI Fundamentals</span>
+              <span class="cert-year">2025</span>
+            </div>
+            <div class="cert-org">IBM</div>
+            <div class="cert-desc">Artificial Intelligence Professional Skills</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exp-wrap">
+      <h2 class="section-title">Experience</h2>
+      <div class="exp-card glass-card">
+        <div class="exp-head">
+          <span class="exp-role">Software Development Trainee - Java Program</span>
+          <span class="exp-period">May 2025 - Present</span>
         </div>
         <div class="exp-company">Afrika Tikkun</div>
         <ul class="exp-desc">
@@ -99,28 +132,83 @@
         </ul>
       </div>
     </section>
-    <section class="glass-card projects">
-      <h3>🌟 Featured Projects</h3>
-      <div class="project-card">
-        <h4>Cosmic Task Manager <span class="proj-status live">Live</span></h4>
-        <p>A space-themed productivity app with stellar animations.<br>
-        <span class="proj-tech">React, TypeScript, Framer Motion</span></p>
-      </div>
-      <div class="project-card">
-        <h4>Neural Network Visualizer <span class="proj-status progress">In Progress</span></h4>
-        <p>Interactive tool for understanding AI architectures.<br>
-        <span class="proj-tech">Python, TensorFlow, D3.js</span></p>
-      </div>
-      <div class="project-card">
-        <h4>Quantum Code Editor <span class="proj-status plan">Planning</span></h4>
-        <p>Next-gen code editor with AI-powered suggestions.<br>
-        <span class="proj-tech">Electron, Monaco, OpenAI API</span></p>
+
+    <section class="projects-wrap">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="proj-grid">
+        <div class="proj-card glass-card">
+          <div class="proj-title-row">
+            <span class="proj-title">Cosmic Task Manager</span>
+            <span class="proj-status live">Live</span>
+          </div>
+          <div class="proj-desc">A space-themed productivity app with stellar animations</div>
+          <div class="proj-techs">
+            <span class="proj-tech">React</span>
+            <span class="proj-tech">TypeScript</span>
+            <span class="proj-tech">Framer Motion</span>
+          </div>
+        </div>
+        <div class="proj-card glass-card">
+          <div class="proj-title-row">
+            <span class="proj-title">Neural Network Visualizer</span>
+            <span class="proj-status progress">In Progress</span>
+          </div>
+          <div class="proj-desc">Interactive tool for understanding AI architectures</div>
+          <div class="proj-techs">
+            <span class="proj-tech">Python</span>
+            <span class="proj-tech">TensorFlow</span>
+            <span class="proj-tech">D3.js</span>
+          </div>
+        </div>
+        <div class="proj-card glass-card">
+          <div class="proj-title-row">
+            <span class="proj-title">Quantum Code Editor</span>
+            <span class="proj-status plan">Planning</span>
+          </div>
+          <div class="proj-desc">Next-gen code editor with AI-powered suggestions</div>
+          <div class="proj-techs">
+            <span class="proj-tech">Electron</span>
+            <span class="proj-tech">Monaco</span>
+            <span class="proj-tech">OpenAI API</span>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section class="funfact-wrap">
+      <div class="glass-card funfact-card">
+        <div class="funfact-title">
+          <span>⭐ Fun Fact <span id="funfact-num"></span> ⭐</span>
+        </div>
+        <div class="funfact-text" id="funfact-text"></div>
+        <div class="funfact-dots" id="funfact-dots"></div>
+      </div>
+    </section>
+
+    <section class="contact-wrap">
+      <div class="glass-card contact-card">
+        <div class="contact-title">
+          <span class="contact-icon">📧</span> Contact
+        </div>
+        <div class="contact-desc">Ready to collaborate? Let's connect!</div>
+        <a href="mailto:zozibuyiswa@gmail.com?subject=Let's Connect&body=Hi Buyiswa, I'd like to discuss a potential collaboration opportunity" class="btn-contact">
+          <span class="btn-contact-icon">📧</span>
+          Get In Touch
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        Built with <span style="color:#f55;">❤️</span> and lots of <span>☕</span> • Powered by Code
+        <div class="footer-links">
+          <a href="https://github.com/Boitumelo-1" target="_blank" title="GitHub" class="footer-linkicon">🐙</a>
+          <a href="https://www.linkedin.com/in/buyiswa-zozi-087980273/" target="_blank" title="LinkedIn" class="footer-linkicon">💼</a>
+          <a href="mailto:zozibuyiswa@gmail.com" title="Email" class="footer-linkicon">✉️</a>
+        </div>
+      </div>
+    </footer>
   </main>
-  <footer>
-    <p>Made with <span class="neon-heart">💜</span> by Buyiswa Asanda Zozi</p>
-  </footer>
   <script src="script.js"></script>
 </body>
 </html>
