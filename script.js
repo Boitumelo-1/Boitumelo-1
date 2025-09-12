@@ -14,7 +14,7 @@ function createGlassyStars(numStars = 110) {
     star.style.background = 'rgba(255,255,255,0.85)';
     star.style.borderRadius = '50%';
     star.style.opacity = 0.5 + Math.random() * 0.5;
-    star.style.boxShadow = `0 0 7px 1.5px #fff8, 0 0 ${1.5 + Math.random()}px 0 #ffa60055`;
+    star.style.boxShadow = `0 0 7px 1.5px #fff8, 0 0 ${1.5 + Math.random()}px 0 #ffef8055`;
     star.style.filter = `blur(${Math.random()}px)`;
     star.style.animation = `twinkle ${1.6 + Math.random() * 2.5}s infinite alternate ${Math.random()}s`;
     container.appendChild(star);
@@ -75,5 +75,5 @@ window.addEventListener('DOMContentLoaded', () => {
   setInterval(() => {
     funfactIndex = (funfactIndex + 1) % funfacts.length;
     renderFunFact(funfactIndex);
-  }, 4000);
+  }, 4200);
 });
