@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 :root {
-  --primary: #ffa600;
-  --primary-neon: #ffcc00;
+  --primary-neon: #ffef80;
+  --primary: #ffcc00;
   --accent: #fff;
-  --glass-bg: rgba(34, 34, 34, 0.42);
-  --glass-bg-deep: rgba(18,18,24,0.74);
-  --glass-border: rgba(255,255,255,0.12);
-  --header-height: 72px;
-  --shadow: 0 2px 32px 0 rgba(255,166,0,0.10), 0 0 40px 0 #ffcc0040;
-  --neon-glow: 0 0 12px #ffcc00, 0 0 32px #ffa60099;
+  --glass-bg: rgba(25, 26, 34, 0.56);
+  --glass-bg-deep: rgba(14, 14, 22, 0.92);
+  --glass-border: rgba(255,255,255,0.10);
+  --neon-glow: 0 0 20px #ffcc00, 0 0 32px #ffef80;
+  --shadow: 0 2px 32px 0 #ffcc0040, 0 0 40px 0 #ffcc0030;
   --text-main: #fff;
   --text-sub: #b0b0b0;
 }
@@ -33,7 +32,7 @@ body {
 
 .main-header {
   width: 100%;
-  height: var(--header-height);
+  height: 72px;
   padding: 0 2.5vw;
   display: flex;
   align-items: center;
@@ -51,7 +50,7 @@ body {
   color: var(--primary-neon);
   letter-spacing: 0.02em;
   text-shadow: var(--neon-glow);
-  filter: drop-shadow(0 0 12px #ffcc00cc);
+  filter: drop-shadow(0 0 12px var(--primary));
 }
 .logo-icon {
   font-size: 1.5em;
@@ -63,14 +62,14 @@ body {
   gap: 1em;
 }
 .btn-cv {
-  background: var(--primary-neon);
+  background: linear-gradient(90deg, #ffef80 0%, #ffcc00 100%);
   color: #222;
   font-weight: bold;
   font-size: 1em;
   padding: 0.44em 1.5em;
   border: none;
   border-radius: 13px;
-  box-shadow: 0 2px 18px 0 #ffcc0080, 0 2px 8px 0 #fff0, 0 0 18px #ffcc00;
+  box-shadow: 0 0 18px #ffef8090, 0 0 32px #ffcc0030;
   cursor: pointer;
   text-decoration: none;
   margin-right: 0.2em;
@@ -81,10 +80,10 @@ body {
   text-shadow: 0 0 8px #fff8;
 }
 .btn-cv:hover, .btn-cv:focus {
-  filter: brightness(1.22) drop-shadow(0 0 22px #ffcc00);
+  filter: brightness(1.19) drop-shadow(0 0 22px #ffcc00);
   background: #fffbe4;
   color: #111;
-  box-shadow: 0 0 22px #ffcc00b0;
+  box-shadow: 0 0 28px #ffcc00b0;
 }
 .btn-social {
   background: #181818cc;
@@ -104,7 +103,7 @@ body {
   backdrop-filter: blur(2.5px);
 }
 .btn-social:hover, .btn-social:focus {
-  background: #22222a;
+  background: #23232b;
   color: var(--primary-neon);
   box-shadow: 0 0 18px #ffcc0033;
 }
@@ -138,13 +137,13 @@ main {
   border-radius: 50%;
   border: 6px solid #222;
   box-shadow:
-    0 0 60px 8px #ffcc00ae,
+    0 0 60px 8px #ffef80ae,
     0 0 0 8px #1d1d21,
-    0 0 0 16px #ffcc0022,
+    0 0 0 16px #ffef8030,
     0 0 0 0.5px #222;
   object-fit: cover;
   background: #222;
-  filter: drop-shadow(0 0 32px #ffcc00cc);
+  filter: drop-shadow(0 0 32px #ffef80cc);
 }
 .hero-title {
   font-size: 2.8rem;
@@ -152,7 +151,7 @@ main {
   margin: 0.2em 0 0.1em 0;
   letter-spacing: 0.05em;
   color: #fff;
-  text-shadow: 0 0 22px #ffcc00b0, var(--neon-glow);
+  text-shadow: 0 0 22px #ffef80b0, var(--neon-glow);
 }
 .hero-subtitle {
   color: var(--text-sub);
@@ -175,27 +174,27 @@ main {
   align-items: center;
   gap: 0.33em;
 }
+
 .glass-card {
   background: var(--glass-bg);
   border-radius: 18px;
   box-shadow: var(--shadow);
-  border: 1.8px solid var(--glass-border);
+  border: 1.6px solid var(--glass-border);
   color: #eaeaea;
   position: relative;
   z-index: 4;
   text-align: center;
-  backdrop-filter: blur(14px) saturate(1.2);
-  /* strong glass effect */
+  backdrop-filter: blur(16px) saturate(1.15);
 }
 
 .about-card {
-  max-width: 460px;
+  max-width: 410px;
   margin: 0 auto 2.7em auto;
-  padding: 1.1em 1.5em 1.1em 1.5em;
+  padding: 1.0em 1.3em 1.0em 1.3em;
   background: var(--glass-bg-deep);
-  border: 1.9px solid #ffcc0040;
-  box-shadow: 0 0 40px 0 #ffcc0033, 0 0 0 0.6px #fff3;
-  font-size: 1.08em;
+  border: 1.8px solid #ffef8040;
+  box-shadow: 0 0 44px 0 #ffef8033, 0 0 0 0.6px #fff3;
+  font-size: 1.07em;
   font-weight: 500;
 }
 
@@ -203,7 +202,7 @@ main {
   color: var(--primary-neon);
   font-size: 1.23em;
   font-weight: bold;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.7em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,11 +210,10 @@ main {
   letter-spacing: 0.03em;
   text-shadow: var(--neon-glow);
 }
-
 .about-icon {
   font-size: 1.1em;
   color: var(--primary-neon);
-  filter: drop-shadow(0 0 6px #ffcc00cc);
+  filter: drop-shadow(0 0 6px #ffef80cc);
 }
 
 .section-title {
@@ -225,21 +223,23 @@ main {
   font-weight: 700;
   margin: 2.2em 0 1.1em 0;
   letter-spacing: 0.025em;
-  text-shadow: 0 0 16px #ffcc0066;
+  text-shadow: 0 0 16px #ffef8066;
 }
 
 .skills-card {
   margin-bottom: 1.2em;
-  max-width: 600px;
+  max-width: 520px;
   padding: 1.2em 2em 1.3em 2em;
   background: var(--glass-bg);
   border: 1.5px solid var(--glass-border);
-  box-shadow: 0 0 14px #ffcc0033;
+  box-shadow: 0 0 14px #ffef8011;
 }
+
 .emoji {
   color: var(--primary-neon);
-  filter: drop-shadow(0 0 6px #ffcc00aa);
+  filter: drop-shadow(0 0 6px #ffef80aa);
 }
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -255,10 +255,10 @@ main {
   font-size: 1em;
   font-weight: 700;
   letter-spacing: 0.03em;
-  box-shadow: 0 2px 14px 0 #ffcc0011;
+  box-shadow: 0 2px 14px 0 #ffef8011;
   margin-bottom: 4px;
   border: 1.4px solid #222;
-  text-shadow: 0 0 8px #ffcc0060;
+  text-shadow: 0 0 8px #ffef8060;
 }
 
 .edu-cert-wrap {
@@ -284,8 +284,8 @@ main {
   text-align: left;
   padding: 1.2em 1.2em 1.1em 1.2em;
   background: var(--glass-bg-deep);
-  border: 1.7px solid #ffcc0040;
-  box-shadow: 0 0 18px #ffcc0022;
+  border: 1.7px solid #ffef8040;
+  box-shadow: 0 0 18px #ffef8022;
 }
 .edu-head {
   display: flex;
@@ -329,8 +329,8 @@ main {
   max-width: 350px;
   text-align: left;
   background: var(--glass-bg-deep);
-  border: 1.6px solid #ffcc0040;
-  box-shadow: 0 0 16px #ffcc0022;
+  border: 1.6px solid #ffef8040;
+  box-shadow: 0 0 16px #ffef8022;
   padding: 1.2em 1.2em 1.1em 1.2em;
 }
 .cert-head {
@@ -374,8 +374,8 @@ main {
   text-align: left;
   margin-bottom: 3em;
   background: var(--glass-bg-deep);
-  border: 1.7px solid #ffcc0040;
-  box-shadow: 0 0 22px #ffcc0022;
+  border: 1.7px solid #ffef8040;
+  box-shadow: 0 0 22px #ffef8022;
   padding: 1.2em 1.3em 1.1em 1.3em;
 }
 .exp-head {
@@ -421,28 +421,34 @@ main {
 }
 .proj-grid {
   display: flex;
-  gap: 2em;
+  gap: 0.8em;
   justify-content: center;
   margin-bottom: 2.7em;
   flex-wrap: wrap;
   width: 100%;
 }
 .proj-card {
-  min-width: 260px;
-  flex: 1 1 260px;
-  max-width: 350px;
+  min-width: 230px;
+  flex: 1 1 230px;
+  max-width: 330px;
   text-align: left;
   background: var(--glass-bg-deep);
   border-radius: 18px;
-  box-shadow: 0 4px 24px 0 #ffcc0020;
-  padding: 1.2em 1.3em 1.2em 1.3em;
-  border: 1.5px solid #ffcc0040;
+  box-shadow: 0 4px 24px 0 #ffef8020;
+  padding: 1.1em 1.1em 1.1em 1.1em;
+  border: 1.5px solid #ffef8040;
   color: #eaeaea;
   position: relative;
   z-index: 4;
   margin-bottom: 1.3em;
   display: flex;
   flex-direction: column;
+  transition: box-shadow 0.25s, transform 0.25s;
+  backdrop-filter: blur(12px) saturate(1.13);
+}
+.proj-card:hover {
+  box-shadow: 0 0 40px #ffef80b0, 0 0 0 2px #ffef80;
+  transform: translateY(-5px) scale(1.022);
 }
 .proj-title-row {
   display: flex;
@@ -463,8 +469,8 @@ main {
   vertical-align: middle;
   font-weight: 600;
   letter-spacing: 0.02em;
-  box-shadow: 0 0 10px 2px #ffcc0045;
-  text-shadow: 0 0 8px #ffcc00bb;
+  box-shadow: 0 0 10px 2px #ffef8045;
+  text-shadow: 0 0 8px #ffef80bb;
 }
 .proj-status.live { background: var(--primary-neon); color: #000; }
 .proj-status.progress { background: #252525; color: #fff; }
@@ -481,7 +487,7 @@ main {
   letter-spacing: 0.01em;
   margin-bottom: 4px;
   border: 1.1px solid #222;
-  text-shadow: 0 0 8px #ffcc0060;
+  text-shadow: 0 0 8px #ffef8060;
 }
 .funfact-wrap {
   width: 100%;
@@ -490,14 +496,14 @@ main {
   margin-bottom: 3em;
 }
 .funfact-card {
-  max-width: 700px;
+  max-width: 420px;
   width: 100%;
   text-align: center;
   position: relative;
   min-height: 110px;
   background: var(--glass-bg-deep);
-  border: 1.6px solid #ffcc0040;
-  box-shadow: 0 0 18px #ffcc0044;
+  border: 1.6px solid #ffef8040;
+  box-shadow: 0 0 18px #ffef8044;
   padding: 1.3em 1.2em 1.1em 1.2em;
 }
 .funfact-title {
@@ -512,7 +518,11 @@ main {
   color: #fff9e1;
   font-size: 1.13em;
   margin-bottom: 1em;
-  text-shadow: 0 0 10px #ffcc0030;
+  text-shadow: 0 0 10px #ffef8030;
+  min-height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .funfact-dots {
   margin-top: 0.2em;
@@ -523,16 +533,16 @@ main {
   height: 9px;
   margin: 0 3px;
   border-radius: 50%;
-  background: #ffcc0040;
+  background: #ffef8040;
   cursor: pointer;
   border: none;
   outline: none;
   transition: background 0.2s, box-shadow 0.18s;
-  box-shadow: 0 0 8px #ffcc0020;
+  box-shadow: 0 0 8px #ffef8020;
 }
 .funfact-dot.active {
-  background: #ffcc00;
-  box-shadow: 0 0 12px #ffcc00b0;
+  background: #ffef80;
+  box-shadow: 0 0 12px #ffef80b0;
 }
 .contact-wrap {
   width: 100%;
@@ -546,8 +556,8 @@ main {
   text-align: center;
   padding: 2.2em 1.4em 1.6em 1.4em;
   background: var(--glass-bg-deep);
-  border: 1.6px solid #ffcc0040;
-  box-shadow: 0 0 18px #ffcc0044;
+  border: 1.6px solid #ffef8040;
+  box-shadow: 0 0 18px #ffef8044;
 }
 .contact-title {
   color: var(--primary-neon);
@@ -567,14 +577,14 @@ main {
   margin-bottom: 1.35em;
 }
 .btn-contact {
-  background: linear-gradient(90deg, #ffcc00 0%, #ffd98e 100%);
+  background: linear-gradient(90deg, #ffef80 0%, #ffd98e 100%);
   color: #111;
   font-weight: 700;
   font-size: 1.09em;
   padding: 0.7em 1.6em;
   border: none;
   border-radius: 13px;
-  box-shadow: 0 2px 18px 0 #ffcc0080, 0 2px 8px 0 #fff0;
+  box-shadow: 0 2px 18px 0 #ffef8090, 0 2px 8px 0 #fff0;
   cursor: pointer;
   text-decoration: none;
   transition: filter 0.18s, box-shadow 0.18s;
@@ -585,8 +595,8 @@ main {
   text-shadow: 0 0 8px #fff8;
 }
 .btn-contact:hover, .btn-contact:focus {
-  filter: brightness(1.08) drop-shadow(0 0 15px #ffcc00a0);
-  box-shadow: 0 0 16px #ffcc00a0;
+  filter: brightness(1.08) drop-shadow(0 0 15px #ffef80a0);
+  box-shadow: 0 0 16px #ffef80a0;
 }
 .btn-contact-icon { font-size: 1.1em; }
 
@@ -618,7 +628,7 @@ main {
 .footer-linkicon:focus {
   color: var(--primary-neon);
   opacity: 1;
-  filter: drop-shadow(0 0 7px #ffcc00cc);
+  filter: drop-shadow(0 0 7px #ffef80cc);
 }
 @media (max-width: 1000px) {
   .edu-grid, .cert-grid, .proj-grid {
@@ -635,7 +645,8 @@ main {
   .main-header { flex-direction: column; height: auto; gap: 1.2em; }
   .header-actions { flex-wrap: wrap;}
   .profile-pic { width: 105px; height: 105px; }
-  .glass-card, .about-card { padding: 1.2em 1em; }
+  .glass-card,
+  .about-card { padding: 1.2em 1em; }
   .hero-title { font-size: 2.1rem;}
   .edu-cert-inner { padding: 0 0.2em; }
 }
